@@ -6,6 +6,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'ParseCrashReportTestApp' do
 
 pod 'Parse', '~> 1.6'
+pod 'ParseCrashReporting', '~> 1.6'
 
 end
 

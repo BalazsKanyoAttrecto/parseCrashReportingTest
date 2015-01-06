@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+#import <Parse/Parse.h>
+#import <ParseCrashReporting/ParseCrashReporting.h>
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +19,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    // 1st step: enable crash reporting
+    [ParseCrashReporting enable];
+    // 2nd step: set app and client id
+    [Parse setApplicationId:@"0iIlEGZQ2JNK5lOL6mrZOwAmHYKfWQy3T13UcFd0" clientKey:@"3IdWKwW401xrELacdETpXrWoZ969RFZN79mLirRn"];
+
     return YES;
 }
 

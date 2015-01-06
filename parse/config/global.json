@@ -1,0 +1,11 @@
+{
+    "applications": {
+        "ParseTest": {
+            "applicationId": "0iIlEGZQ2JNK5lOL6mrZOwAmHYKfWQy3T13UcFd0", 
+            "masterKey": "RC2FW5ruKJOjUmdknIWWK4BlDawinXNzs0Vk5waa"
+        }, 
+        "_default": {
+            "link": "ParseTest"
+        }
+    }
+}
