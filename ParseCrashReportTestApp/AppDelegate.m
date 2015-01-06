@@ -11,6 +11,8 @@
 #import <Parse/Parse.h>
 #import <ParseCrashReporting/ParseCrashReporting.h>
 
+#import "ViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -25,7 +27,14 @@
     // 2nd step: set app and client id
     [Parse setApplicationId:@"0iIlEGZQ2JNK5lOL6mrZOwAmHYKfWQy3T13UcFd0" clientKey:@"3IdWKwW401xrELacdETpXrWoZ969RFZN79mLirRn"];
 
+    [self performSelector:@selector(crash) withObject:nil afterDelay:5.0];
+    
     return YES;
+}
+
+- (void)crash {
+    ViewController* vc = (ViewController*)[UIApplication sharedApplication].delegate.window.rootViewController;
+    [vc crash2];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

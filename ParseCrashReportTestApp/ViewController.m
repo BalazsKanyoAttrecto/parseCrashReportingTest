@@ -24,4 +24,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) crash2
+{
+    [NSException raise:NSGenericException format:@"Everything is ok. This is just a test crash from crash2."];
+}
 @end

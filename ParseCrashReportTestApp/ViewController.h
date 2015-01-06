@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (void) crash2;
 
 @end
 
